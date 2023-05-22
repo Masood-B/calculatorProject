@@ -24,6 +24,7 @@ addEventListener("click", ()=>{
 document.querySelectorAll(".operator").forEach( (ops)=>{
     ops.addEventListener("click", (e)=>{
         result.value += e.target.innerText;
+        button.disabled = false;
     })
 })
 // equal
@@ -31,3 +32,9 @@ document.querySelector("#addup").
 addEventListener("click", ()=>{
     result.value = eval(result.value).toFixed(2);
 })
+
+let button = document.querySelector(".dot");
+
+button.addEventListener("click",()=>{
+    button.disabled = true;
+});
