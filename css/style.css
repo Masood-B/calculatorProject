@@ -10,33 +10,36 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    background-image: linear-gradient(to right top, rgb(172, 15, 143), rgb(241, 79, 212));
 }
 .container{
-    border: 10xp solid black;
+    border: 2xp solid black;
     border-radius: 20px;
     padding: 20px;
-    background: linear-gradient(to left bottom, rgb(30, 67, 201), rgb(87, 87, 253));
+    background: linear-gradient(to left bottom, rgb(151, 171, 242), rgb(87, 87, 253));
 }
 #screen{
     width: 100%;
     text-align: right;
     height:50px;
+    background-image: linear-gradient(to right top, rgb(172, 15, 143), rgb(241, 79, 212));
 }
 button{
     width:40px;
     padding: 10px;
     margin: 5px;
     text-align: center;
+    background-color:  #7d5c65;
 }
 /* Laast row */
 .row {
     display: flex;
 }
 .row>:nth-child(2) {
-    margin-left: .5rem;
+    margin-left: .6rem;
 }
 .row>:last-child{
-    margin-left: .8rem;
+    margin-left: .5rem;
     flex-grow: 1;
 }
 
