@@ -18,6 +18,7 @@ document.querySelector("#clear").
 addEventListener("click", ()=>{
     let output = result.value;
     result.value = "";
+    button.disabled = false;
 })
 
 // sign
@@ -31,6 +32,7 @@ document.querySelectorAll(".operator").forEach( (ops)=>{
 document.querySelector("#addup").
 addEventListener("click", ()=>{
     result.value = eval(result.value).toFixed(2);
+    button.disabled = false;
 })
 
 let button = document.querySelector(".dot");
